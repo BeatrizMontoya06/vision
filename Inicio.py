@@ -1,6 +1,14 @@
 import streamlit as st
 
-st.title("Visión por Computador")
-st.write("Elige una app en el menú lateral:")
-st.write("- **Teachable Machine**: clasificación con tu modelo entrenado")
-st.write("- **YOLO**: detección de objetos")
+st.set_page_config(page_title="Interfaces Multimodales", page_icon="📡")
+
+st.title("INTERFACES MULTIMODALES")
+st.subheader("Control de actuadores por MQTT")
+
+st.write(
+    "Selecciona una de las aplicaciones en el menú lateral "
+    "o usa los accesos directos de abajo."
+)
+
+st.page_link("pages/1_Control_por_voz.py", label="Control por voz", icon="🎙️")
+st.page_link("pages/2_Control_MQTT.py", label="Control con botones y slider", icon="🎛️")
